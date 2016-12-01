@@ -1,8 +1,10 @@
 # Aether build for Fable
 
-[![Aether Chat](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/xyncro/aether?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![npm version](https://badge.fury.io/js/fable-aether.svg)](https://badge.fury.io/js/fable-aether)
-[![Fable Chat](https://badges.gitter.im/gitterHQ/gitter.svg)](https://gitter.im/fable-compiler/Fable)
+
+Aether [![Aether Chat](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/xyncro/aether?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+Fable [![Fable Chat](https://badges.gitter.im/gitterHQ/gitter.svg)](https://gitter.im/fable-compiler/Fable)
 
 
 ## What is Aether?
