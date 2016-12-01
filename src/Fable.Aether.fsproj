@@ -29,7 +29,6 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="node_modules/fable-core/Fable.Core.dll" />
-    <!--<Reference Include="node_modules/fable-powerpack/Fable.Powerpack.dll" />-->
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\paket-files\xyncro\aether\src\Aether\Aether.fs">

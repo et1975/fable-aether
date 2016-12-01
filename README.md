@@ -17,7 +17,7 @@ Fable [![Fable Chat](https://badges.gitter.im/gitterHQ/gitter.svg)](https://gitt
 npm install --save fable-core fable-aether
 ```
 
-Add a reference to the assemblies in the package folders (e.g. `node_modules/fable-aether/Fable.Aether.dll`).
+Include the source from the packages folder (e.g. `node_modules/fable-aether/Aether.fs`).
 
 ## License
 

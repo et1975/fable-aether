@@ -1,0 +1,14 @@
+{
+    "projFile": "tests.fsx",
+    "module": "commonjs",
+    "outDir": "build",
+    "refs": {
+        "Fable.Core": "fable-core/umd"
+    },
+    "plugins": [
+        "node_modules/fable-plugins-nunit/Fable.Plugins.NUnit.dll"
+    ],
+    "scripts": {
+        "prebuild": "yarn install"
+    }
+}

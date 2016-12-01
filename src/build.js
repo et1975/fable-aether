@@ -8,7 +8,7 @@ var targets = {
     build() {
         return fable.promisify(fs.remove, "npm")
             .then(_ => fable.compile())
-            .then(_ => fable.compile({target: "umd"}))
+            .then(_ => fable.promisify(fs.copy, "../paket-files/xyncro/aether/src/Aether/Aether.fs", "npm/Aether.fs"))
             .then(_ => fable.promisify(fs.copy, "package.json", "npm/package.json"))
             .then(_ => fable.promisify(fs.copy, "../README.md", "npm/README.md"))
             .then(_ => fable.promisify(fs.readFile, "RELEASE_NOTES.md"))

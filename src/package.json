@@ -13,10 +13,10 @@
   "keywords": [
     "F#",
     "Fable",
-    "Lenses"
+    "Optics"
   ],
   "author": "Xyncro",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "devDependencies": {
     "fable-compiler": "^0.7.16",
     "fable-core": "^0.7.11"
