@@ -1,0 +1,24 @@
+{
+  "name": "fable-aether",
+  "version": "0.0.0",
+  "description": "Xyncro/Aether build for Fable.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/et1975/fable-aether.git"
+  },
+  "scripts": {
+    "build": "node node_modules/fable-compiler",
+    "package": "node build.js"
+  },
+  "keywords": [
+    "F#",
+    "Fable",
+    "Lenses"
+  ],
+  "author": "Xyncro",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "fable-compiler": "^0.7.16",
+    "fable-core": "^0.7.11"
+  }
+}

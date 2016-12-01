@@ -1,0 +1,24 @@
+# OSX
+#
+.DS_Store
+
+# node.js
+#
+**/node_modules/
+npm-debug.log
+samples/**/public
+
+.vscode/
+
+# F#
+.fake/
+.paket/paket.exe
+packages/
+paket-files/
+build/
+obj
+bin
+npm
+
+# git
+*.orig
