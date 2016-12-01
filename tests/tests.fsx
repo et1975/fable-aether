@@ -8,7 +8,8 @@ module Testing =
     type TestAttribute = Fable.Core.Testing.TestAttribute
     type TestFixtureAttribute = Fable.Core.Testing.TestFixtureAttribute
     
-    let (=!) x y = Assert.AreEqual(x,y)
+    let (=!) x y = 
+        Assert.AreEqual( (x = y), true)
 
 open System
 open Aether
