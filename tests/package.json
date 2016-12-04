@@ -11,9 +11,9 @@
     },
     "devDependencies": {
         "fable-aether": "^0.1.1",
-        "fable-compiler": "^0.7.16",
-        "fable-core": "^0.7.11",
-        "fable-plugins-nunit": "^0.7.1",
+        "fable-compiler": "^0.7.18",
+        "fable-core": "^0.7.14",
+        "fable-plugins-nunit": "^0.7.2",
         "mocha": "^3.0.2"
     }
 }
