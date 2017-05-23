@@ -1,6 +1,20 @@
-source https://www.nuget.org/api/v2
+source https://nuget.org/api/v2
 
-nuget fake
-nuget NUnit
+nuget FSharp.Core  redirects:force, content:none
+nuget Fable.Core
+nuget Fable.PowerPack
 
 github xyncro/aether src/Aether/Aether.fs
+
+group Build
+framework: net46
+
+    source https://nuget.org/api/v2
+    nuget FSharp.Core  redirects:force, content:none
+    nuget FAKE
+    nuget FSharp.Formatting
+
+    github fsharp/FAKE modules/Octokit/Octokit.fsx
+
+    nuget NUnit
+

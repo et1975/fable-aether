@@ -1,23 +1,15 @@
 <Project Sdk="FSharp.NET.Sdk;Microsoft.NET.Sdk">
-  <Import Project="..\Meta.props" />
   <PropertyGroup>
     <TargetFramework>netstandard1.6</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\paket-files\xyncro\aether\src\Aether\Aether.fs">
-      <Paket>True</Paket>
-      <Link>Aether.fs</Link>
-    </Compile>
+    <ProjectReference Include="..\src\Fable.Aether.fsproj" />
+    <Compile Include="tests.fs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="FSharp.NET.Sdk" Version="1.0.*" PrivateAssets="All" />
     <DotNetCliToolReference Include="dotnet-fable" Version="1.0.4" />
-  </ItemGroup>
-  <!-- Add source files to "fable" folder in Nuget package -->
-  <ItemGroup>
-    <Content Include="*.fsproj; *.fs" PackagePath="fable\" />
-    <Content Include="..\paket-files\xyncro\aether\src\Aether\Aether.fs"  PackagePath="fable\" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>

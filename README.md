@@ -1,6 +1,8 @@
 # Aether build for Fable
 
-[![npm version](https://badge.fury.io/js/fable-aether.svg)](https://badge.fury.io/js/fable-aether)
+[![Windows Build status](https://ci.appveyor.com/api/projects/status/oglr6gark7btawu2?svg=true)](https://ci.appveyor.com/project/et1975/fable-aether)
+[![Mono Build Status](https://travis-ci.org/prolucid/fable-aether.svg "Mono Build Status")](https://travis-ci.org/prolucid/fable-aether)
+[![nuget](https://badge.fury.io/nu/Fable.Aether.svg)](https://badge.fury.io/nu/Fable.Aether)
 
 Aether [![Aether Chat](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/xyncro/aether?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -14,10 +16,8 @@ Fable [![Fable Chat](https://badges.gitter.im/gitterHQ/gitter.svg)](https://gitt
 ## Installation
 
 ```shell
-npm install --save fable-core fable-aether
+paket add nuget Fable.Aether -i
 ```
-
-Include the source from the packages folder (e.g. `node_modules/fable-aether/Aether.fs`).
 
 ## License
 

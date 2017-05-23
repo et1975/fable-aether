@@ -1,6 +1,4 @@
-#r "../packages/NUnit/lib/dotnet/nunit.framework.dll"
-#r "node_modules/fable-core/Fable.Core.dll"
-#load "node_modules/fable-aether/Aether.fs"
+namespace Fable.Aether.Tests
 
 [<AutoOpen>]
 module Testing =

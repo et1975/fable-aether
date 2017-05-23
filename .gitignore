@@ -5,20 +5,24 @@
 # node.js
 #
 **/node_modules/
+**/npm/
 npm-debug.log
-samples/**/public
-
-.vscode/
 
 # F#
 .fake/
-.paket/paket.exe
 packages/
-paket-files/
 build/
 obj
 bin
-npm
+out
 
 # git
 *.orig
+
+.vs
+
+docs/output
+docs/temp
+
+Meta.props
+temp
