@@ -9,7 +9,7 @@ open Fake.NpmHelper
 open Fake.ReleaseNotesHelper
 open Fake.Git
 
-let yarn = ProcessHelper.tryFindFileOnPath "yarn"
+let yarn = ProcessHelper.tryFindFileOnPath (if isWindows then "yarn.cmd" else "yarn")
            |> Option.get // make sure there's npm yarn is installed
 
 // Filesets
@@ -87,15 +87,16 @@ Target "InstallDotNetCore" (fun _ ->
 
 
 Target "Install" (fun _ ->
+    Npm (fun p ->
+    { p with
+        NpmFilePath = yarn
+    })
     projects
     |> Seq.iter (fun s -> 
         let dir = IO.Path.GetDirectoryName s
         runDotnet dir "restore"
        )
-    Npm (fun p ->
-    { p with
-        NpmFilePath = yarn
-    }))
+)
 
 Target "Build" (fun _ ->
     runDotnet "src" "build"
