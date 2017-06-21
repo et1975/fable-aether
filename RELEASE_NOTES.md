@@ -1,6 +1,10 @@
+### 1.0.2
+
+* Fable 1.1 compat
+
 ### 1.0.1
 
-* Fable 1.x compat
+* Fable 1.0 compat
 
 ### 0.1.1
 
